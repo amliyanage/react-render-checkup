@@ -1,0 +1,48 @@
+{
+  "name": "eslint-plugin-react-render-checkup",
+  "version": "1.0.0",
+  "description": "ESLint plugin to detect React performance footguns and re-render issues",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "react",
+    "performance",
+    "render",
+    "optimization",
+    "memoization"
+  ],
+  "author": "Ashen Madhushanka <ashenmliyanage@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amliyanage/react-render-checkup.git",
+    "directory": "packages/eslint-plugin-checkup"
+  },
+  "bugs": {
+    "url": "https://github.com/amliyanage/react-render-checkup/issues"
+  },
+  "homepage": "https://github.com/amliyanage/react-render-checkup#readme",
+  "peerDependencies": {
+    "eslint": "^7.0.0 || ^8.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.9.3"
+  }
+}
